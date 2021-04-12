@@ -146,6 +146,67 @@ footer a:hover{
 
 /*FINAL FOOTER*/
 
+/* INICIO HERO*/
+.hero{
+    background-image: url("../img/fondo.jpg");
+    height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    background-color: rgb(133, 131, 131);
+    background-blend-mode: multiply;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.hero h1{
+    font-family: var(--fuente-secundaria);
+    font-size: 2.25em;
+
+}
+.hero h3{
+    font-family: var(--fuente-principal);
+    color: var(--color-principal);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0px;
+}
+hero p{
+    font-size: 1.15em;
+}
+.hero .social li{
+    display: inline-block;
+    margin-right: var(--margingrid);
+    font-size: 2em;
+}
+.hero .social li a{
+    color: white;
+}
+.boton{
+    background-color: var(--color-principal);
+    font-size: white;
+    display: inline-block;
+    padding: 1.15em;
+    margin:var(--margingrid) 0px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid var(--color-principal);
+}
+.boton:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+}
+.boton:hover i{
+    transform: translate(5px);
+    transition: all 1.5s;
+}
+/* FINAL HERO*/
+
 /*mediaqueries
 600, 768, 1004*/
 @media(min-width:600px){
