@@ -86,7 +86,26 @@ header nav .hamburguesa div{
 }
 header nav ul{
     width: 100%;
+    text-align: center;
 }
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-decoration: 0;
+    text-align: center;
+    padding: calc(var(--padding)* 2px);
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+header nav .menu li:last-child a{
+    border-bottom: 0;
+}
+header nav .menu li .activo, 
+header nav .menu li a:hover{
+    color: var(--color-principal);
+    transition: 1s;
+}
+
 
 
 
@@ -114,5 +133,20 @@ header nav ul{
 }
 
 @media(min-width:1004px){
-    
+    header nav .hamburguesa{ /*ocultamos el menu hamburguesa*/
+        display: none;
+    }
+    header nav ul{
+        width: auto;
+    }
+    header nav .menu li{
+        display: inline-block;
+    }
+    header nav .menu li a{
+        padding: 0.5em var(--padding);
+        border-bottom: 0;
+    }
+    header{
+        box-shadow: 0px .2px 3px gray;
+    }
 }
