@@ -20,6 +20,7 @@ html{
     --font-size: 1em;
     --anchoMaximo: 68.750em; /*1.000px*/
     --margingrid: 1em;
+    --padding: 0.625em;
 }
 img{
     width: 100%;
@@ -33,4 +34,85 @@ body{
 .container{
     max-width: var(--anchoMaximo);
     margin: 0 auto;
+}
+
+/*INICIO HEADER*/
+header .nav-top{
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2)0px;
+}
+
+header .nav-top .container{
+    display: flex;
+    justify-content: space-around;
+}
+header .nav-top a{
+    color: var(--color-principal);
+    text-decoration: none;
+}
+header .nav-top a span{
+    display: none; /*para quitar los textos en el formato movil*/
+}
+header .nav-top a i{
+    font-size: 150%;
+}
+
+header nav{
+    padding:calc(var(--padding)* 2);
+}
+header nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+header nav .logo{
+    width: 50%;
+}
+header nav .logo img {
+    max-width: 6.250em;
+}
+header nav .hamburguesa{
+    cursor: pointer;
+
+
+}
+header nav .hamburguesa div{
+    border-bottom: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+
+}
+header nav ul{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*FINAL HEADER*/
+
+/*mediaqueries
+600, 768, 1004*/
+@media(min-width:600px){
+
+}
+
+@media(min-width:768px){
+    header .nav-top a span{
+        display: inline;
+        color: white;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+}
+
+@media(min-width:1004px){
+    
 }
