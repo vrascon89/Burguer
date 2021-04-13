@@ -278,11 +278,21 @@ main #ourservices article > div .fas{
     transform: rotateY(180deg);
 }
 
-    
-
-
-
 /*Final Ourservice*/
+
+/*Inicio AboutUs*/
+main section:last-child{
+    padding-bottom: 90px;
+}
+main section h4{
+    margin:var(--padding) 0;
+    color: var(--color-principal);
+}
+main section .flex{
+    display: flex;
+    flex-direction: column;
+}
+/*Fin AboutUs*/
 
 /*mediaqueries
 600, 768, 1004*/
@@ -297,6 +307,12 @@ main #ourservices article > div .fas{
         border-bottom: none;
         border-left: 1px solid #aaa;
         padding: 1.5em;
+    }
+    main section .flex{
+        flex-direction: row;
+    }
+    main section .flex .columna{
+        margin: 0 var(--margingrid);
     }
 }
 
