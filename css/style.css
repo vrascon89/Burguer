@@ -267,7 +267,7 @@ main section h3{
     transform: translateX(5px);
 }
 
-main #outservices article > div .fas{
+main #ourservices article > div .fas{
     color: var(--color-principal);
     font-size: 1.5em;
     border: 1px solid var(--color-principal);
