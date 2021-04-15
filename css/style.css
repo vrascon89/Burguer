@@ -215,6 +215,7 @@ hero p{
 main section{
     padding: 2.125em 1.5em;
 }
+
 main section h2{
     color: black;
     font-family: var(--fuente-secundaria);
@@ -312,7 +313,19 @@ main .imagen:hover .marco img{
     transform: rotateZ(0deg);
 }
 /*Fin AboutUs*/
-
+main #ourblogs h2{
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+main #ourblogs h2 span{
+    color: var(--fuente-principal);
+    color: var(--color-principal);
+}
+/*INICIO OurBLOG*/
+main 
+/*FIN OurBLOG*/
 /*mediaqueries
 600, 768, 1004*/
 @media(min-width:600px){
