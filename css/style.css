@@ -481,6 +481,16 @@ footer a {
     }
 }
 
+/*INICIO DEL MENU*/
+main section {
+    
+    padding: calc(var(--margingrid)*3) var(--margingrid);
+    background-color: var(--colorsegundario);
+}
+
+
+/*FIN DEL MENU*/
+
 /*FIN OurBLOG*/
 /*mediaqueries
 600, 768, 1004*/
