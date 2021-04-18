@@ -326,14 +326,14 @@ main #ourblogs h2 span{
 /*INICIO OurBLOG*/
 
 
-main h2 {
+main section h2 {
     font-family: "Handlee", cursive;
     font-size: 2em;
     text-align: center;
     padding-top: 1.2em;
 }
 
-main h2 span {
+main section h2 span {
     color: #fa573a;
 }
 
@@ -481,6 +481,130 @@ footer a {
     }
 }
 
+/*INICIO DEL MENU*/
+main section {
+    
+    padding: calc(var(--margingrid)*3) var(--margingrid);
+    background-color:var(--color-secundario);
+   
+}
+
+
+main section h2{
+
+    
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+main section h2 span{
+
+    color: var(--color-principal);
+}
+
+main section .underline{
+
+    position: relative;
+    width: 100px;
+    margin:0 auto;
+    text-align: center;
+    margin-top: var(--margingrid);
+    margin-bottom: var(--margingrid);
+    
+}
+
+main section .underline hr{
+
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main section .underline span {
+
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main.grid{
+    font-size: 0.90em;
+}
+
+main .grid div nav ul li{
+    margin: 0.5em;
+}
+main .grid div nav ul li a{
+
+    text-decoration: none ;
+    color: white;
+    display: block;
+    padding: 0.50em;
+}
+main .grid div nav ul li .active{  
+    background-color: var(--color-principal);
+    border-radius: 2%;
+}
+main .grid div article{
+    padding: calc(var(--margingrid)*2);
+}
+
+container .offers{
+    position: relative;
+}
+.offers hr{
+    width: 50px;
+    background-color: var(--color-principal);
+    position: absolute;
+}
+main .grid article h3{
+
+    font-weight: 700;
+    margin: 10px 0;
+    color: white;
+}
+
+main section p{
+
+    color: #aaa;
+    line-height: 1.25;
+  
+} 
+.enlace{
+
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: bold
+}
+
+
+.div{
+
+    margin: 0 var(--margingrid);
+}
+
+.div article div{
+
+    position: relative;
+    
+}
+
+.div article div p:last-child{
+
+    position: absolute;
+    color: var(--colorprincipal);
+    font-weight: bold;
+    right: 0;
+    top:0;
+    
+}
+
+
+/*FIN DEL MENU*/
+
 /*FIN OurBLOG*/
 /*mediaqueries
 600, 768, 1004*/
@@ -501,6 +625,55 @@ footer a {
     }
     main section .flex .columna{
         margin: 0 var(--margingrid);
+    }
+    .segunda_columna section p{
+        visibility: hidden;
+    }
+
+    header .nav-top a span{
+    
+        display: inline;
+        color: white;
+    }
+
+    header .nav-top a i{
+
+        font-size: 120%;
+    }
+
+    footer{
+
+        text-align: left;
+    }
+
+
+
+    main .grid{
+
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: var(--margingrid);
+        
+    }
+
+    .segunda_columna{
+
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: var(--margingrid);
+    }
+
+    .segunda_columna section p{
+
+        color: var(--colorprincipal);
+        font-weight: bold;
+        
+       }
+
+    .div article div p:last-child{
+
+      display: none;
+        
     }
 }
 
@@ -541,5 +714,26 @@ footer a {
     }
     footer{
         text-align: left;
+    }
+    header .hamburguesa{
+
+        display: none;
+
+    }
+
+    header .menu{
+        padding-top: 0px;
+        float: right;
+    }
+
+    header .menu li{
+
+        display: inline-block;
+    }
+
+    header .menu li a{
+
+        border: none;
+        padding: 0.5em calc(var(--margingrid));
     }
 }
