@@ -521,12 +521,12 @@ main section .underline hr{
     position: absolute;
     width: 100%;
     top: -1px;
-    border-color: var(--colorprincipal);
+    border-color: var(--color-principal);
 }
 
 main section .underline span {
 
-    color: var(--colorprincipal);
+    color: var(--color-principal);
     font-weight: 700;
 }
 
@@ -576,7 +576,7 @@ main section p{
 .enlace{
 
     text-decoration: none;
-    color: var(--colorprincipal);
+    color: var(--color-principal);
     font-weight: bold
 }
 
@@ -595,7 +595,7 @@ main section p{
 .div article div p:last-child{
 
     position: absolute;
-    color: var(--colorprincipal);
+    color: var(--color-principal);
     font-weight: bold;
     right: 0;
     top:0;
@@ -664,16 +664,12 @@ main section p{
     }
 
     .segunda_columna section p{
-
-        color: var(--colorprincipal);
+        color: var(--color-principal);
         font-weight: bold;
-        
-       }
+    }
 
     .div article div p:last-child{
-
       display: none;
-        
     }
 }
 
