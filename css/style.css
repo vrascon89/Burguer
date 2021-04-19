@@ -435,51 +435,6 @@ footer a {
     text-decoration: none;
 }
 
-@media (min-width: 48.063em) /* 768px */ {
-    header .nav-top a span {
-        display: inline;
-        font-size: 68%;
-    }
-}
-
-@media (min-width: 62.750em) /* 1004px */ {
-    header .hamburguesa {
-        display: none;
-    }
-
-    header nav .menu {
-        padding-top: 0;
-        float: right;
-    }
-
-    header nav .menu li {
-        display: inline-block;
-        padding: 0.5em;
-        border-bottom: 0;
-        text-align: left;
-    }
-
-    header nav .menu li {
-        padding-right: 0;
-    }
-
-    main .posts article {
-        width: 31%;
-    }
-
-    main .posts-container {
-        padding: 0.5em 1em 1.6em 1em;
-    }
-
-    main .posts article h3 {
-        font-size: 1.2em;
-    }
-    
-    main .posts article a,
-    main .posts article p {
-        font-size: 0.9em;
-    }
-}
 
 /*INICIO DEL MENU*/
 main section {
@@ -606,6 +561,12 @@ main section p{
 /*FIN DEL MENU*/
 
 /*FIN OurBLOG*/
+
+
+
+
+/*MEDIA*/
+
 /*mediaqueries
 600, 768, 1004*/
 @media(min-width:600px){
@@ -672,7 +633,6 @@ main section p{
       display: none;
     }
 }
-
 @media(min-width:768px){
     header .nav-top a span{
         display: inline;
@@ -689,7 +649,11 @@ main section p{
     footer{
         text-align: left;
     }
-}
+    header .nav-top a span {
+            display: inline;
+            font-size: 68%;
+        }
+    }
 
 @media(min-width:1004px){
     header nav .hamburguesa{ /*ocultamos el menu hamburguesa*/
@@ -732,4 +696,37 @@ main section p{
         border: none;
         padding: 0.5em calc(var(--margingrid));
     }
+    
+    header nav .menu {
+        padding-top: 0;
+        float: right;
+    }
+    
+    header nav .menu li {
+        display: inline-block;
+        padding: 0.5em;
+        border-bottom: 0;
+        text-align: left;
+    }
+    
+    header nav .menu li {
+        padding-right: 0;
+    }
+    
+        main .posts article {
+            width: 31%;
+        }
+    
+        main .posts-container {
+            padding: 0.5em 1em 1.6em 1em;
+        }
+    
+        main .posts article h3 {
+            font-size: 1.2em;
+        }
+        
+        main .posts article a,
+        main .posts article p {
+            font-size: 0.9em;
+        }
 }
